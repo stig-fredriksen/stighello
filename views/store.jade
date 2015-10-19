@@ -1,5 +1,7 @@
 extends layout
 
 block content
-  h1= title
-  p Greetings to #{title}
+	h1=title
+	form(action='http://localhost:3000/message', method='post')
+		input(type='text', name='message', placeholder='enter a message')
+		input(type='submit',name='submit',value='submit')
