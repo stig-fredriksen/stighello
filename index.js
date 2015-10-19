@@ -7,4 +7,6 @@ app.get('/', function(req, res){
 
 console.log('starting...')
 
-app.listen(3000);
+var port = (process.env.PORT || '3000')
+
+app.listen(port);
